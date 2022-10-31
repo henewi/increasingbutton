@@ -1,13 +1,21 @@
-function numberUp() {
-    var stinky = document.getElementById('newnum');
+// function numberUp() {
 
-    console.log(stinky)
+//     var value = parseInt(document.getElementById('newnum').value, 10);
 
-    var numberino = stinky.innerHTML
+//     value = isNaN(value) ? 0 : value; 
+    
+//     value++;
 
-    ++numberino;
+//     console.log(value)
 
-    console.log(numberino)
+//     document.getElementById('newnum').value = value;
+// }
 
-    document.getElementById=('newnum').innerHTML = numberino;
+
+function incrementValue()
+{
+    var value = parseInt(document.getElementById('number').value, 10);
+    value = isNaN(value) ? 0 : value;
+    value++;
+    document.getElementById('number').value = value;
 }
